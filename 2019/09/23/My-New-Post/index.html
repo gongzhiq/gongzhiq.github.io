@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="今天在网上下载了一个开源程序，仔细阅读了一下源码内容，发现开源作者使用属性和成员变量的方式跟我大不相同。于是翻阅了一些资料，了解了前因后果。如何正确使用属性和成员变量，才能在以后工作或面试中得心应手？精彩请往下看。一、类Class中的属性property在ios第一版中，我们为输出口同时声明了属性和底层实例变量，那时，属性是oc语言的一个新的机制，并且要求你必须声明与之对应的实例变量，例如： @i">
 <meta name="keywords" content="IOS技术，源码，Xcode技巧，国外优质技术文章，最新技术分享园地">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/09/23/hello-world/index.html">
+<meta property="og:title" content="你真的了解iOS中的属性和成员变量吗（面试必考）">
+<meta property="og:url" content="http://yoursite.com/2019/09/23/My-New-Post/index.html">
 <meta property="og:site_name" content="易找源码">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="今天在网上下载了一个开源程序，仔细阅读了一下源码内容，发现开源作者使用属性和成员变量的方式跟我大不相同。于是翻阅了一些资料，了解了前因后果。如何正确使用属性和成员变量，才能在以后工作或面试中得心应手？精彩请往下看。一、类Class中的属性property在ios第一版中，我们为输出口同时声明了属性和底层实例变量，那时，属性是oc语言的一个新的机制，并且要求你必须声明与之对应的实例变量，例如： @i">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-23T03:20:18.169Z">
+<meta property="og:updated_time" content="2019-09-23T08:04:26.565Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-  <link rel="canonical" href="http://yoursite.com/2019/09/23/hello-world/">
+<meta name="twitter:title" content="你真的了解iOS中的属性和成员变量吗（面试必考）">
+<meta name="twitter:description" content="今天在网上下载了一个开源程序，仔细阅读了一下源码内容，发现开源作者使用属性和成员变量的方式跟我大不相同。于是翻阅了一些资料，了解了前因后果。如何正确使用属性和成员变量，才能在以后工作或面试中得心应手？精彩请往下看。一、类Class中的属性property在ios第一版中，我们为输出口同时声明了属性和底层实例变量，那时，属性是oc语言的一个新的机制，并且要求你必须声明与之对应的实例变量，例如： @i">
+  <link rel="canonical" href="http://yoursite.com/2019/09/23/My-New-Post/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>Hello World | 易找源码</title>
+  <title>你真的了解iOS中的属性和成员变量吗（面试必考） | 易找源码</title>
   
 
 
@@ -198,7 +198,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/23/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/23/My-New-Post/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zach">
@@ -210,7 +210,7 @@
       <meta itemprop="name" content="易找源码">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hello World
+        <h1 class="post-title" itemprop="name headline">你真的了解iOS中的属性和成员变量吗（面试必考）
 
           
         </h1>
@@ -226,8 +226,12 @@
                 
               
 
-              <time title="创建时间：2019-09-23 11:20:18" itemprop="dateCreated datePublished" datetime="2019-09-23T11:20:18+08:00">2019-09-23</time>
+              <time title="创建时间：2019-09-23 16:03:04 / 修改时间：16:04:26" itemprop="dateCreated datePublished" datetime="2019-09-23T16:03:04+08:00">2019-09-23</time>
             </span>
+          
+            
+
+            
           
 
           
@@ -241,19 +245,37 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>今天在网上下载了一个开源程序，仔细阅读了一下源码内容，发现开源作者使用属性和成员变量的方式跟我大不相同。于是翻阅了一些资料，了解了前因后果。如何正确使用属性和成员变量，才能在以后工作或面试中得心应手？精彩请往下看。</p><p>一、类Class中的属性property</p><p>在ios第一版中，我们为输出口同时声明了属性和底层实例变量，那时，属性是oc语言的一个新的机制，并且要求你必须声明与之对应的实例变量，例如： @interface MyViewController :UIViewController { UIButton *myButton; } @property (nonatomic, retain) UIButton *myButton;@end</p><a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>最近，苹果将默认编译器从GCC转换为LLVM(low level virtual machine)，从此不再需要为属性声明实例变量了。如果LLVM发现一个没有匹配实例变量的属性，它将自动创建一个以下划线开头的实例变量。因此，在这个版本中，我们不再为输出口声明实例变量。</p>
+<p>例如：MyViewController.h文件</p>
+<p>@interface MyViewController :UIViewController @property (nonatomic, retain) UIButton *myButton;@end</p>
+<p>在MyViewController.m文件中，编译器也会自动的生成一个实例变量_myButton。那么在.m文件中可以直接的使用_myButton实例变量，也可以通过属性self.myButton.都是一样的。</p>
+<p>注意这里的self.myButton其实是调用的myButton属性的getter/setter方法。这与C++中点的使用是有区别的，C++中的点可以直接访问成员变量(也就是实例变量)。</p>
+<p>例如在oc中有如下代码 .h文件</p>
+<p>@interface MyViewController :UIViewController { NSString *name; }@end</p>
+<p>.m文件中，self.name 这样的表达式是错误的。xcode会提示你使用-&gt;,改成self-&gt;name就可以了。因为oc中点表达式是表示调用方法，而上面的代码中没有name这个方法。</p>
+<p>oc语法关于点表达式的说明：”点表达式(.)看起来与C语言中的结构体访问以及java语言汇总的对象访问有点类似，其实这是oc的设计人员有意为之。如果点表达式出现在等号 ＝ 左边，该属性名称的setter方法将被调用。如果点表达式出现在右边，该属性名称的getter方法将被调用。”</p>
+<p>所以在oc中点表达式其实就是调用对象的setter和getter方法的一种快捷方式, 例如：dealie.blah = greeble 完全等价于 [dealie.blah setBlah:greeble];</p>
+<p>以前的用法，声明属性跟与之对应的实例变量：</p>
+<p>@interface MyViewController :UIViewControlle { UIButton *myButton; } @property (nonatomic, retain) UIButton *myButton;@end</p>
+<p>这种方法基本上使用最多，现在大部分也是在使用，因为很多开源的代码都是这种方式。但是ios5更新之后，苹果是建议以以下的方式来使用： @interface MyViewController :UIViewController @property (nonatomic, retain) UIButton *myButton; @end</p>
+<p>因为编译器会自动为你生成以下划线开头的实例变量_myButton，不需要自己手动再去写实例变量。而且也不需要在.m文件中写@synthesize myButton；也会自动为你生成setter，getter方法。@synthesize的作用就是让编译器为你自动生成setter与getter方法。</p>
+<p>@synthesize 还有一个作用，可以指定与属性对应的实例变量，例如@synthesize myButton = xxx；那么self.myButton其实是操作的实例变量xxx，而不是_myButton了。</p>
+<p>在实际的项目中，我们一般这么写.m文件 @synthesize myButton;</p>
+<p>这样写了之后，那么编译器会自动生成myButton的实例变量，以及相应的getter和setter方法。注意：_myButton这个实例变量是不存在的，因为自动生成的实例变量为myButton而不是_myButton，所以现在@synthesize的作用就相当于指定实例变量；</p>
+<p>如果.m文件中写了@synthesize myButton;那么生成的实例变量就是myButton；如果没写@synthesize myButton;那么生成的实例变量就是_myButton。所以跟以前的用法还是有点细微的区别。</p>
+<p>二、类别中的属性property</p>
+<p>类与类别中添加的属性要区分开来，因为类别中只能添加方法，不能添加实例变量。经常会在ios的代码中看到在类别中添加属性，这种情况下，是不会自动生成实例变量的。比如在：UINavigationController.h文件中会对UIViewController类进行扩展</p>
+<p>@interface UIViewController (UINavigationControllerItem) @property(nonatomic,readonly,retain) UINavigationItem *navigationItem; @property(nonatomic) BOOL hidesBottomBarWhenPushed; @property(nonatomic,readonly,retain) UINavigationController *navigationController; @end</p>
+<p>这里添加的属性，不会自动生成实例变量，这里添加的属性其实是添加的getter与setter方法。</p>
+<p>注意一点，匿名类别(匿名扩展)是可以添加实例变量的，非匿名类别是不能添加实例变量的，只能添加方法，或者属性（其实也是方法）。</p>
+<p>成员变量用于类内部，无需与外界接触的变量。</p>
+<p>根据成员变量的私有性，为了方便访问，所以就有了属性变量。属性变量的好处就是允许让其他对象访问到该变量。当然，你可以设置只读或者可写等，设置方法也可自定义。所以，属性变量是用于与其他对象交互的变量。</p>
+<p>一些建议:</p>
+<p>1.如果只是单纯的private变量，最好声明在implementation里. 2.如果是类的public属性，就用property写在.h文件里 3.如果自己内部需要setter和getter来实现一些东西，就在.m文件的类目里用property来声明</p>
+<p>.h中的interface的大括号{}之间的实例变量，.m中可以直接使用； .h中的property变量，.m中需要使用self.propertyVariable的方式使用propertyVariable变量</p>
 
     </div>
 
@@ -270,15 +292,15 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
+                <a href="/2019/09/23/Hello-Hexo/" rel="next" title="【翻译】WWDC 2019 ：优秀的开发习惯">
+                  <i class="fa fa-chevron-left"></i> 【翻译】WWDC 2019 ：优秀的开发习惯
+                </a>
+              
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/09/23/Hello-Hexo/" rel="prev" title="【翻译】WWDC 2019 ：优秀的开发习惯">
-                  【翻译】WWDC 2019 ：优秀的开发习惯 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -327,8 +349,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-        
       </div>
       <!--/noindex-->
 
